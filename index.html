@@ -115,6 +115,21 @@
 
 		<script src="js/jquery-3.4.1.js"></script>
 		<script>
+			let wid = $(window).width();
+			let $menu = $(".canvas-demos");
+			if(wid < 400) {
+				$menu.css({
+					"bottom": `${14}px`,
+					"z-index": 6 
+				}).find(".demo-list").css({
+					"bottom": 0
+				}).find(".item").css({
+					"margin-bottom": `${10}px`,
+					"background-color": "transparent"
+				})
+			}
+		</script>
+		<script>
 			// 网页重定向
 			$(window).on("load", () => {
 				let $item = $(".canvas-demos .item");
