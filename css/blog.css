@@ -38,6 +38,7 @@ a {
 	transition: all .4s ease;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	text-align: center;
 }
 
@@ -46,10 +47,8 @@ a {
 }
 
 .canvas-demos .demo-list .item {
-	flex: 1;
-	margin: 20px 30px;
 	cursor: pointer;
-	padding: 10px 0;
+	padding: 6px 10px;
 	background-color: #333;
 	position: relative;
 	overflow: hidden;
@@ -63,7 +62,6 @@ a {
 }
 
 
-/* 轮播图案例 */
 .bg-type {
 	position: fixed;
 	z-index: 10;
@@ -76,7 +74,7 @@ a {
 
 .bg-type .demo-list {
 	height: 100%;
-	width: 10%;
+	width: 20%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;

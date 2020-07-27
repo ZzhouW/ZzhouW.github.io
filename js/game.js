@@ -86,14 +86,14 @@ function game(){
 			// 的位置。所以当点击弹窗的确认后蛇会“闪”一下从而渲染到游戏结束的位置
 			// alert("游戏结束");
 			gameover.style.visibility = "visible";
-			text.innerHTML = "超出范围，游戏结束";
+			text.innerHTML = "Game Over";
 		}
 		// 2. 判断蛇头 是否与身体重合，重合则游戏结束
 		for (var i = 1; i < snake.body.length; i++) {
 			if (snake.body[i].x == snake.body[0].x && snake.body[i].y == snake.body[0].y) {
 				clearInterval(gameStart);
 				gameover.style.visibility = "visible";
-				text.innerHTML = "咬到自己，游戏结束";
+				text.innerHTML = "bited yourself";
 				// alert("游戏结束");
 
 			}

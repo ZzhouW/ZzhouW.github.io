@@ -35,7 +35,7 @@
 		let canvas = document.getElementById("canvas"),
 			ctx = canvas.getContext("2d");
 		// 1.画布设置
-		canvas.width = 400,
+			canvas.width = 400,
 			canvas.height = 400;
 		// 表盘绘制
 		function drawBg() {
@@ -160,5 +160,12 @@
 		let timer = setInterval(clockRun, 1000);
 		// 由于定时器不会立即执行，所以进入页面时手动绘制一次、
 		clockRun();
+		
+		
+		// 移动端
+		let wid = window.innerWidth;
+		if(wid < 400) {
+			canvas.style.transform = "scale(0.6)";
+		}
 	</script>
 </html>
